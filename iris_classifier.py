@@ -28,5 +28,6 @@ LR.fit(X_train, y_train)
 pred=LR.predict(X_test)
 accuracy_score(pred,y_test)
 
-from sklearn.externals import joblib
-joblib.dump(LR, "classification_model.pkl")
+import joblib
+
+joblib.dump(LR, "classification_model.joblib")
