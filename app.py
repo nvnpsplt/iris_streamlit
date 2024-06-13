@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import pickle
+import pickle5 as pickle
 
 # Load the model
 model = pickle.load(open('IRIS-model.pkl', 'rb'))
