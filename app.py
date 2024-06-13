@@ -1,9 +1,9 @@
 import streamlit as st
 import pandas as pd
-import pickle5 as pickle
+import joblib
 
 # Load the model
-model = pickle.load(open('IRIS-model.pkl', 'rb'))
+model = joblib.load('classification_model.joblib')
 
 # Streamlit header
 st.header("Iris Flower Classification:")
